@@ -1,0 +1,3 @@
+<svg>
+  <image xlink:href="1" onerror="alert(123)" >
+</svg>
