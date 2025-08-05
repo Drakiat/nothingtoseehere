@@ -1,4 +1,11 @@
-<svg>
-  <polygon id="triangle" points="0,0 0,50 50,0" fill="#009900" stroke="#004400"/>
-  <script type="text/javascript" sandbox="allow-scripts">alert("xss");</script>
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
+  <animate onbegin=alert(1) attributeName=x dur=1s>
 </svg>
+<html>
+    <head>
+        <script src="./dist/svg-loader.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <svg data-src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJmdWxsIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwb2x5Z29uIGlkPSJ0cmlhbmdsZSIgcG9pbnRzPSIwLDAgMCw1MCA1MCwwIiBmaWxsPSIjMDA5OTAwIiBzdHJva2U9IiMwMDQ0MDAiLz4KICA8YW5pbWF0ZSBvbmJlZ2luPWFsZXJ0KDEpIGF0dHJpYnV0ZU5hbWU9eCBkdXI9MXM+Cjwvc3ZnPgo="></svg>
+    </body>
+</html>
