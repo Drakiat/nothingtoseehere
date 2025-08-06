@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="200"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     onload="init(evt)">
+
+  <script type="application/ecmascript">
+    <![CDATA[
+      function init(evt) {
+        if (window.svgDocument == null) {
+          svgDocument = evt.target.ownerDocument;
+        }
+      }
+
+      function showAlert() {
+        alert("Circle clicked!");
+      }
+    ]]>
+  </script>
+
+  <circle cx="100" cy="100" r="50" fill="blue" onclick="showAlert()" />
+</svg>
